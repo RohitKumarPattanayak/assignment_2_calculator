@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Assignment_2_calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div style="background-color: rgb(146, 243, 243)" class="calculator">
+      <nav style="background-color: rgb(146, 243, 243)">
+        <button class="button-67" style="text-transform: uppercase">
+          calculator
+        </button>
+      </nav>
+      <div class="screen" id="mainscreen">
+        <input type="text" readonly placeholder="0" id="screen" />
+      </div>
+      <div class="calc" id="calcbody">
+        <div class="row">
+          <button onclick="insertvalue(this)">7</button>
+          <button onclick="insertvalue(this)">8</button>
+          <button onclick="insertvalue(this)">9</button>
+          <button class="bluew" onclick="del()" id="sp1">DEL</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">4</button>
+          <button onclick="insertvalue(this)">5</button>
+          <button onclick="insertvalue(this)">6</button>
+          <button onclick="insertvalue(this)">+</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">1</button>
+          <button onclick="insertvalue(this)">2</button>
+          <button onclick="insertvalue(this)">3</button>
+          <button onclick="insertvalue(this)">-</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">.</button>
+          <button onclick="insertvalue(this)">0</button>
+          <button onclick="insertvalue(this)">/</button>
+          <button onclick="insertvalue(this)">x</button>
+        </div>
+        <div class="row">
+          <button style="color: gray" class="blue" onclick="reset()" id="sp2">
+            RESET
+          </button>
+          <button style="color: gray" class="red" onclick="calcu()" id="sp3">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
